@@ -24,4 +24,4 @@ For additional functionality, check the docs.
 ## [Flemish] Automatische Vlaamse Spraakherkenning
 Bij Faktion hebben we samen met Chatlayer.ai onze eigen Vlaamse spraakherkenningstechnologie ontwikkeld. Dit laat ons toe automatisch gesproken 
 Vlaamse taal om te zetten naar tekst. Deze technologie kan onder meer ingezet worden in callcenters, 
-automatische ondertiteling of het automatisch omzetten van interviews.
+voor automatische ondertiteling of het automatisch omzetten van interviews naar tekst.
