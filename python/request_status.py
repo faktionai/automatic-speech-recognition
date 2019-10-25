@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 import argparse
 import os
@@ -15,4 +16,4 @@ r = requests.get(os.path.join(args.server, 'http/speech/status/'),
 
 
 json_object = json.loads(r.text)
-print(json_object["message"])
+print(json_object['message'])

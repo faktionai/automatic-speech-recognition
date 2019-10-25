@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import argparse
 import requests
 import json
@@ -24,14 +25,14 @@ with open(args.file, 'rb') as f:
                              params={'Authorization': args.key})
             if r.status_code == 200:
                 json_object = json.loads(r.text)
-                print(json_object["message"])
-                if json_object["status"] == 2 and "transcription" in json_object:
+                print(json_object['message'])
+                if json_object['status'] == 2 and 'transcription' in json_object:
                     print(json_object)
                     break
-                elif json_object["status"] == 3:
-                    print("Transcription failed")
+                elif json_object['status'] == 3:
+                    print('Transcription failed')
             else:
-                print("Something went wrong")
+                print('Something went wrong')
             time.sleep(1)
     elif r.status_code == 401:
         print('You are not authorized!')
